@@ -1,0 +1,18 @@
+---
+import HeaderLink from '../components/shared/HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav class="h-[70px] bg-gray-2 px-40 flex items-center">
+		<div class="mr-10">
+			<img src="/note_logo.png" height="27" width="120" alt="note_brand_logo">
+		</div>
+		<div class="space-x-10">
+			<HeaderLink href="/">Homepages</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/categories">Categories</HeaderLink>
+			<HeaderLink href="/blog">Pages</HeaderLink>
+		</div>
+	</nav>
+</header>

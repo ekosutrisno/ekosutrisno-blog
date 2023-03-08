@@ -1,0 +1,13 @@
+---
+export interface Props {
+	textHighlight: string;
+	textNormal: string;
+}
+
+const { textHighlight, textNormal} = Astro.props;
+---
+
+<h1 class="text-2xl">
+  <span class="bg-green-0 text-white px-1">{ textHighlight }</span>
+  <span>{ textNormal }</span>
+</h1>
